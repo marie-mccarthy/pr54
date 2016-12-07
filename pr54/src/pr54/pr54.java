@@ -23,7 +23,7 @@ public static void main(String[] args) throws FileNotFoundException
 file.nextLine();
     //sorts the array
     for (int j = 0; j < (Class.get(zz).getTeacher()).length()-1; j++)
-
+    	{
 //    {
 //      int minIndex = j;
 //      for (int k = j + 1; k < Class.size(); k++)
@@ -33,11 +33,12 @@ file.nextLine();
 //        minIndex = k;
 //        }
 //      }
-//      list temp =  Class.get(j);
-//      home.get(j) = Class.get(minIndex);
-//      Class.get(minIndex) = temp;
-//    //removes duplicates
     	
+      Student temp =  Class.get(j);
+      Class.get(j) = Class.get(minIndex);
+      Class.get(minIndex) = temp;
+    //removes duplicates
+    	}
   //print the array
     for(int i= 0 ; i <Class.size(); i ++)
     {
